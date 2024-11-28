@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/',
   server: {
     watch: {
       usePolling: true
@@ -19,6 +20,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
-  },
-  base: '/anabeatrizmartinez.github.io'
+  }
 })
