@@ -1,0 +1,204 @@
+@import "./base.css";
+@import "@fontsource/poppins";
+
+:root {
+  --primary-color: rgba(192, 89, 217, 1);
+  --secondary-color: #db92ec;
+  --text-color: #ffffff;
+  --background-color: #242424;
+  --link-hover-color: rgba(192, 89, 217, 0.2);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+#app {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.4s;
+  padding: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title, .subTitle {
+  padding: 0 18%;
+  text-align: center;
+}
+
+.description-container {
+  padding: 0 18%;
+  text-align: justify;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.gameplay {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.iframe-youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/******************** For lists ********************/
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  top: 0.28em !important; /* Value to vertical align */
+}
+
+.level-1-item, .level-2-item {
+  position: relative;
+  padding-left: 24px;
+}
+
+.level-1-item .icon, .level-2-item .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.level-1-item .text {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.level-2-item .text {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+ul .level-1 {
+  background: url('/src/assets/dot-white.png') no-repeat center center;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+ul .level-2 {
+  background: url('/src/assets/arrow-right-white.png') no-repeat center center;
+  background-size: contain;
+  margin-left: 30px;
+}
+
+/******************** Vuetify ********************/
+.v-btn {
+  color: var(--text-color) !important;
+}
+
+.v-app-bar .v-btn:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.v-menu .v-btn{
+  width: 100%;
+}
+
+.v-menu .v-btn:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.v-divider {
+  margin: 0 8%;
+}
+
+.v-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.v-list {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+.v-list-item {
+  padding: 0 16px !important;
+}
+
+.v-icon {
+  margin-right: 8px;
+}
+
+.custom-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+.v-list-item__content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.v-carousel {
+  min-width: 70vw;
+  height: 100% !important;
+}
+
+/******************** media ********************/
+@media (hover: hover) {
+  a:hover {
+    background-color: var(--link-hover-color);
+    text-decoration-line: underline;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .title, .subTitle {
+    padding: 0 8%;
+  }
+
+  .description-container {
+    padding: 0 8%;
+  }
+
+  .v-carousel {
+    min-width: 90vw;
+  }
+}
