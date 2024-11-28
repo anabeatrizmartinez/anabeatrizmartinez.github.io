@@ -1,35 +1,25 @@
-# portfolio_web
+# Ana Beatriz Martinez
 
-This template should help get you started developing with Vue 3 in Vite.
+## Game Programmer | Frontend Developer Portfolio
+ 
+ Welcome to my portfolio! This project is built with Vue.js and Vite, showcasing some of my projects and skills.
+ 
+ ## Description
+ 
+ This web portfolio is designed to present my projects and skills in an attractive and professional manner. It includes sections like "About Me," "Projects," and "Contact."
+ 
+ ## Technologies Used
+ 
+ - Vue.js
+ - JavaScript
+ - HTML5
+ - CSS3
+ - Vite
+ - Vuetify
 
-## Recommended IDE Setup
+## Contact
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+If you have any questions or suggestions, feel free to contact me:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Email: [anamartinez.developer@gmail.com](mailto:anamartinez.developer@gmail.com)
+- LinkedIn: [linkedin.com/in/anabeatrizmartinez](https://www.linkedin.com/in/anabeatrizmartinez/)
