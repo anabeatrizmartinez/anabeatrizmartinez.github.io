@@ -30,7 +30,7 @@
 
         <v-list-item>
           <div class="v-list-item__content">
-            <v-img src="/src/assets/itch-io-white.png" class="custom-icon"></v-img>
+            <v-img src="src/assets/itch-io-white.png" class="custom-icon"></v-img>
             itch.io profile: 
             <a class="link-contact" href="https://anabeatrizmartinez.itch.io/" target="_blank">anabeatrizmartinez.itch.io</a>
           </div>

@@ -3,7 +3,7 @@
     <AppHeader />
     
     <!-- game image - banner -->
-    <v-parallax src="/src/assets/Capture_2.png" scale="0.5"></v-parallax>
+    <v-parallax src="src/assets/Capture_2.png" scale="0.5"></v-parallax>
 
     <About />
     
@@ -56,23 +56,23 @@ export default {
           captures: [
             {
               id: 1,
-              src: '/src/assets/Capture_1.png'
+              src: 'src/assets/Capture_1.png'
             },
             {
               id: 2,
-              src: '/src/assets/Capture_2.png'
+              src: 'src/assets/Capture_2.png'
             },
             {
               id: 3,
-              src: '/src/assets/Capture_3.png'
+              src: 'src/assets/Capture_3.png'
             },
             {
               id: 4,
-              src: '/src/assets/Capture_4.png'
+              src: 'src/assets/Capture_4.png'
             },
             {
               id: 5,
-              src: '/src/assets/Capture_5.png'
+              src: 'src/assets/Capture_5.png'
             },
           ],
         },

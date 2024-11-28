@@ -57,7 +57,7 @@ export default {
     },
 
     openResume() {
-      const pdfUrl = '/public/assets/CV_Ana_Martinez_Developer.pdf';
+      const pdfUrl = '/assets/CV_Ana_Martinez_Developer.pdf';
       window.open(pdfUrl, '_blank');
     }
   }
