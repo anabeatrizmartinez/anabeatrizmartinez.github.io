@@ -23,6 +23,15 @@
     
     <Contact />
 
+    <!-- button to top -->
+    <v-container id="buttonToTop">
+      <v-fab-transition>
+        <v-btn v-show="showButtonToTop" @click="scrollToTop" icon class="scroll-to-top">
+          <v-icon size="36px">mdi-arrow-up-drop-circle</v-icon>
+        </v-btn>
+      </v-fab-transition>
+    </v-container>
+
     <AppFooter />
   </v-app>
 </template>
@@ -45,6 +54,7 @@ export default {
   },
   data() {
     return {
+      showButtonToTop: false,
       projects: [
         {
           id: 1,
@@ -79,10 +89,40 @@ export default {
       ],
     };
   },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+
+    handleScroll() {
+      this.showButtonToTop = window.scrollY > 200;
+    }
+  }
 };
 </script>
 
 <style>
+#buttonToTop .v-btn {
+  background-color: transparent !important;
+}
+
+#buttonToTop .v-btn:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 56px;
+  right: 20px;
+  z-index: 1000;
+}
+
 @media only screen and (min-width: 1200px) {
   .v-parallax {
     height: 39vw;

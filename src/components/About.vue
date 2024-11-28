@@ -37,7 +37,7 @@ export default {
     },
 
     openResume() {
-      const pdfUrl = '/public/assets/CV_Ana_Martinez_Developer.pdf';
+      const pdfUrl = 'https://drive.google.com/file/d/1p-7rkaFXnRTUt1cHDL3Q9FLCmYS0dz7m/view?usp=drive_link';
       window.open(pdfUrl, '_blank');
     }
   }

@@ -134,7 +134,7 @@ ul .level-2 {
   background-color: var(--primary-color) !important;
 }
 
-.v-menu .v-btn{
+.v-menu .v-btn {
   width: 100%;
 }
 
@@ -160,14 +160,16 @@ ul .level-2 {
   padding: 0 16px !important;
 }
 
-.v-icon {
+.v-list-item .v-icon {
   margin-right: 8px;
 }
 
 .custom-icon {
-  width: 26px;
-  height: 26px;
-  margin-right: 8px;
+  width: 27px;
+  height: 27px;
+  margin-right: 6px;
+  margin-bottom: 2px;
+  left: -0.5%;
 }
 
 .v-list-item__content {

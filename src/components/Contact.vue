@@ -31,8 +31,8 @@
         <v-list-item>
           <div class="v-list-item__content">
             <v-img src="/assets/itch-io-white.png" class="custom-icon"></v-img>
-            itch.io profile: 
-            <a class="link-contact" href="https://anabeatrizmartinez.itch.io/" target="_blank">anabeatrizmartinez.itch.io</a>
+            <span>itch.io profile: </span>
+            <a class="custom-icon-link" href="https://anabeatrizmartinez.itch.io/" target="_blank">anabeatrizmartinez.itch.io</a>
           </div>
         </v-list-item>
       </v-list>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style scoped>
-.link-contact {
+.custom-icon-link {
   margin-left: 5px;
 }
 </style>

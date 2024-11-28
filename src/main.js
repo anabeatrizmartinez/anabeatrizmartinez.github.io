@@ -36,15 +36,6 @@ const vuetify = createVuetify({
           }
         }
       },
-      VMenu: {
-        VBtn: {
-          color: '#fff',
-          variant: 'text',
-          style: {
-            backgroundColor: 'transparent',
-          }
-        }
-      },
       VCarousel: {
         VBtn: {
           variant: 'flat',
